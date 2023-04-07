@@ -1,0 +1,106 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs:hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons:hsl(0, 0%, 95%);
+}
+body{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    margin: 0;
+    padding: 0;
+}
+main{
+    position: static;
+    margin: 150px 0 0 0px;
+}
+.container{
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+.section{
+    width: 33%;
+    padding: 2.3em;
+    display: grid;
+    gap: 1em;
+}
+.details h1{
+    text-transform: uppercase;
+    font-family:'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+.details p{
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family:'Lexend Deca', sans-serif;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+.btn{
+    margin-top: 25px;
+}
+button{
+    width: 10em;
+    height: 3.5em;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    color: transparent;
+    font-weight: 500;
+    font-family:'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.orange button{
+    color: var(--Bright-orange);
+}
+.orange button:hover{
+    border: 2px solid #fff;
+    background-color: var(--Bright-orange);
+    color: #fff;
+}
+.cyan button{
+    color: var(--Dark-cyan);
+}
+.cyan button:hover{
+    border: 2px solid #fff;
+    background-color: var(--Dark-cyan);
+    color: #fff;
+}
+.dark-cyan button{
+    color: var(--Very-dark-cyan);
+}
+.dark-cyan button:hover{
+    border: 2px solid #fff;
+    background-color: var(--Very-dark-cyan);
+    color: #fff;
+}
+.sedan{
+    background-color: var(--Bright-orange);
+}
+.suv{
+    background-color: var(--Dark-cyan);
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+}
+footer{
+    display: grid;
+    justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+    main{
+        margin-top: 25px;
+    }
+    .container{
+        display: grid;
+        margin: auto;
+        width: 100%;
+    }
+    .section{
+        width: 60%;
+        padding: 2.3em;
+        display: grid;
+        gap: 1em;
+    }
+}
