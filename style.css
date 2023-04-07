@@ -88,6 +88,12 @@ footer{
     display: grid;
     justify-content: center;
 }
+footer p{
+    color: #000;
+    font-weight: 500;
+    font-family:'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
 @media screen and (max-width: 1000px) {
     main{
         margin-top: 25px;
